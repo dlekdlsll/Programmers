@@ -1,10 +1,2 @@
 def solution(s):
-    answer = ''
-    for j,i in enumerate(s):
-        if i != ' ':
-            if s.find(i) == 0 or s[s.find(i, j)-1] == ' ':
-                if i.isdigit() == False: answer += i.upper()
-                else: answer += i
-            else: answer += i.lower()
-        else: answer += i
-    return answer
+    return ''.join([i.upper() if i.isdigit() == False and (s.find(i) == 0 or s[s.find(i, j)-1] == ' ') else i.lower() for j,i in enumerate(s)])
