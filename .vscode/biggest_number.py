@@ -1,3 +1,2 @@
 def solution(numbers):
-    answer = ''.join(map(str,sorted(numbers, reverse = True)))
-    return answer
+    return ''.join(sorted(map(str,numbers),key = lambda x: (x*3)[-1], reverse = True))
