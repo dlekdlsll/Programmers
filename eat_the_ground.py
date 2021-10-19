@@ -4,5 +4,5 @@ def solution(land):
     for i in land[1:]:
         res = max([j for j in i if i.index(j)!=loc])
         loc = i.index(res)
-        answer += res
+        answer =+ res
     return answer
