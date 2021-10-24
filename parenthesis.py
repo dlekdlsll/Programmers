@@ -1,4 +1,5 @@
 def solution(s):
+    flag = 0
     if s.count('(') == s.count(')'):
         if s[0] == ')':
             answer = False
