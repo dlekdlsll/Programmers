@@ -4,9 +4,10 @@ def solution(s):
         if s[0] == ')':
             flag = 1
         elif s[-1] == '(':
-            answer = False
+            flag = 0
         else:
-            answer = True
+            flag = 1
     else:
-        answer = False
+        flag = 0
+    answer = True if flag == 1 else False
     return answer
