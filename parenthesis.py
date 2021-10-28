@@ -3,9 +3,9 @@ def solution(s):
     if s.count('(') == s.count(')'):
         flag = 1
         if s[0] == ')':
-            flag = 1
+            flag = 2
         elif s[-1] == '(':
-            flag = 0
+            flag = 1
     else:
         flag = 0
     answer = True if flag == 1 else False
