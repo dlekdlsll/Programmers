@@ -4,4 +4,5 @@ def solution(citations):
         up = len([i for i in citations if i >= h])
         dn = len([i for i in citations if i < h])
         if up == h and up + dn == count:
-            return h
+            answer = h
+    return answer
