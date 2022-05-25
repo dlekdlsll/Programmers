@@ -1,3 +1,3 @@
 # Programmers
 https://programmers.co.kr/
-LEVEL_2 도전중
+잠시 쉬는중입니다~
